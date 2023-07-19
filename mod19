@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f6f6f6;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header, .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header p, .footer p {
+            margin: 0;
+        }
+
+        .carousel {
+            margin: 30px auto;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .carousel .carousel-inner {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .carousel-item {
+            text-align: center;
+        }
+
+        .carousel-item img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .presentation {
+            margin: 50px auto;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .form-container {
+            margin: 50px auto;
+            width: 60%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #6c63ff;
+        }
+
+        .btn-primary {
+            background-color: #6c63ff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #574ddd;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <p>Desenvolvido por Poliana Calegario</p>
+    </header>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/fot1.jpg" alt="Corrente">
+            </div>
+            <div class="carousel-item">
+                <img src="image/fot2.jpg" alt="Brilho">
+            </div>
+            <div class="carousel-item">
+                <img src="image/fot3.jpg" alt="Lab">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    
+    <div class="presentation">
+        <h2>Quem sou eu...</h2>
+        <p>Sou uma estudante de Web Design e TI, com 29 anos.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend eleifend nibh vitae tincidunt. Integer aliquam ipsum et metus dignissim iaculis. Nam efficitur sodales quam non fermentum. Fusce lacinia auctor velit eu varius. Sed pellentesque sodales metus, nec commodo elit.</p>
+    </div>
+    
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <p>Desenvolvido por Poliana Calegario</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
